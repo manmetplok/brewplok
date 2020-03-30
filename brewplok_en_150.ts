@@ -2,19 +2,6 @@
 <!DOCTYPE TS>
 <TS version="2.1" language="en_150">
 <context>
-    <name>Page2Form.ui</name>
-    <message>
-        <location filename="Page2Form.ui.qml" line="9"/>
-        <source>Page 2</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="Page2Form.ui.qml" line="15"/>
-        <source>You are on Page 2.</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
     <name>TempPanel.ui</name>
     <message>
         <location filename="TempPanel.ui.qml" line="20"/>

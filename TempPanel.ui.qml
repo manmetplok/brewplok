@@ -5,7 +5,7 @@ Column {
     id: root
     property string name: "Sensor"
     Text {
-        id: "s"
+        id: element235
         color: "#ffffff"
         text: root.name
         property string property0: "none.none"

@@ -24,7 +24,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 #    endif()
 #endif()
 
-find_package(Qt5 COMPONENTS Core Quick LinguistTools REQUIRED)
+find_package(Qt5 COMPONENTS Core Quick Charts LinguistTools REQUIRED)
 
 set(TS_FILES brewplok_en_150.ts)
 
@@ -46,6 +46,6 @@ endif()
 target_compile_definitions(brewplok
   PRIVATE $<$<OR:$<CONFIG:Debug>,$<CONFIG:RelWithDebInfo>>:QT_QML_DEBUG>)
 target_link_libraries(brewplok
-  PRIVATE Qt5::Core Qt5::Quick)
+  PRIVATE Qt5::Core Qt5::Quick Qt5::Charts)
 
 qt5_create_translation(QM_FILES ${CMAKE_SOURCE_DIR} ${TS_FILES})
