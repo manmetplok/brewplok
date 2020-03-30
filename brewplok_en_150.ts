@@ -32,17 +32,17 @@
 <context>
     <name>main</name>
     <message>
-        <location filename="main.qml" line="11"/>
+        <location filename="main.qml" line="13"/>
         <source>Tabs</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="main.qml" line="30"/>
+        <location filename="main.qml" line="32"/>
         <source>Control</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="main.qml" line="33"/>
+        <location filename="main.qml" line="35"/>
         <source>Graphs</source>
         <translation type="unfinished"></translation>
     </message>

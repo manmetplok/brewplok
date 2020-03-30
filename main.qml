@@ -6,8 +6,10 @@ ApplicationWindow {
     id: window
     visible: true
 
-    width: 640
-    height: 480
+    width: 1920
+     height: 1080
+     visibility: "FullScreen"
+
     title: qsTr("Tabs")
 
     SwipeView {

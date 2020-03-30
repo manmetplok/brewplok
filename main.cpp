@@ -29,6 +29,5 @@ int main(int argc, char *argv[])
     context->setContextProperty("sensorModel", &model);
     engine.load(url);
 
-
     return app.exec();
 }
