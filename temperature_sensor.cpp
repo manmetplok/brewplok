@@ -18,8 +18,12 @@ double TemperatureSensor::target_temp() const {
     return m_target_temp;
 }
 
-double TemperatureSensor::current_temp() const {
+float TemperatureSensor::current_temp() const {
     return m_current_temp;
+}
+
+void TemperatureSensor::current_temp(float temp) {
+    m_current_temp = temp;
 }
 
 SensorModel::SensorModel(QObject *parent)
@@ -56,5 +60,6 @@ QHash<int, QByteArray> SensorModel::roleNames() const {
     QHash<int, QByteArray> roles;
     roles[NameRole] = "name";
     roles[AddressRole] = "address";
+    roles[CurrentTempRole] = "current";
     return roles;
 }

@@ -12,13 +12,14 @@ public:
     QString name() const;
     QString address() const;
     double target_temp() const;
-    double current_temp() const;
+    float current_temp() const;
+    void current_temp(float);
 
 private:
     QString m_name;
     QString m_address;
     double m_target_temp;
-    double m_current_temp;
+    float m_current_temp;
 };
 
 class SensorModel : public QAbstractListModel

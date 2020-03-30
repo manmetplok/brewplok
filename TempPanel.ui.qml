@@ -4,6 +4,7 @@ import QtQuick.Controls 2.14
 Column {
     id: root
     property string name: "Sensor"
+    property real current: 20.0
     Text {
         id: element235
         color: "#ffffff"
@@ -39,7 +40,7 @@ Column {
     Text {
         id: element6
         color: "#ffffff"
-        text: qsTr("Target Temperature")
+        text: qsTr("Current Temperature")
         anchors.left: parent.left
         lineHeight: 1.2
         font.pixelSize: 20
@@ -49,7 +50,7 @@ Column {
     Text {
         id: temp4
         color: "#61df0e"
-        text: qsTr("61°C")
+        text: current + " °C"
         font.underline: false
         anchors.left: parent.left
         horizontalAlignment: Text.AlignLeft

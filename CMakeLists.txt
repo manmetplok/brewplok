@@ -38,6 +38,7 @@ else()
     add_executable(brewplok
       main.cpp
       temperature_sensor.cpp
+      DS18B20.cpp
       qml.qrc
       ${TS_FILES}
     )

@@ -4,15 +4,18 @@
 <context>
     <name>TempPanel.ui</name>
     <message>
-        <location filename="TempPanel.ui.qml" line="20"/>
-        <location filename="TempPanel.ui.qml" line="42"/>
+        <location filename="TempPanel.ui.qml" line="21"/>
         <source>Target Temperature</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="TempPanel.ui.qml" line="30"/>
-        <location filename="TempPanel.ui.qml" line="52"/>
+        <location filename="TempPanel.ui.qml" line="31"/>
         <source>61°C</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="TempPanel.ui.qml" line="43"/>
+        <source>Current Temperature</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
