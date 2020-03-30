@@ -52,6 +52,8 @@ QVariant SensorModel::data(const QModelIndex & index, int role) const {
         return sensor.name();
     else if (role == AddressRole)
         return sensor.address();
+    else if (role == CurrentTempRole)
+        return sensor.current_temp();
     return QVariant();
 }
 
