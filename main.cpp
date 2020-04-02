@@ -3,6 +3,8 @@
 #include <QQmlApplicationEngine>
 #include <QQmlContext>
 #include "temperature_sensor.h"
+#include "temperature_controller.h"
+
 #include "DS18B20.h"
 
 int main(int argc, char *argv[])
@@ -14,17 +16,15 @@ int main(int argc, char *argv[])
     QCoreApplication::setAttribute(Qt::AA_EnableHighDpiScaling);
 
     QApplication app(argc, argv);
-    DS18B20 sens1("28-00000b385bb3");
-    auto temp = sens1.getTemp();
-//    auto temp = 12.3f;
+
     SensorModel model;
     TemperatureSensor sensorMod("28-00000b385bb3");
-    sensorMod.current_temp(temp);
+
+
     model.addSensor(sensorMod);
-    model.addSensor(TemperatureSensor("0x002"));
-    model.addSensor(TemperatureSensor("0x003"));
 
-
+    TemperatureController controller(&model);
+    controller.Start();
     QQmlApplicationEngine engine;
 
 

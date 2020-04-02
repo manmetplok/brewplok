@@ -1,0 +1,5 @@
+/home/jorrit/Plok/brewplok/build/CMakeFiles/edit_cache.dir
+/home/jorrit/Plok/brewplok/build/CMakeFiles/rxcpp.dir
+/home/jorrit/Plok/brewplok/build/CMakeFiles/rebuild_cache.dir
+/home/jorrit/Plok/brewplok/build/CMakeFiles/brewplok.dir
+/home/jorrit/Plok/brewplok/build/CMakeFiles/brewplok_autogen.dir

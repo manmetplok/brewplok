@@ -32,6 +32,13 @@ DS18B20::DS18B20(const char* address) {
 DS18B20::~DS18B20() {
 }
 
+
+float DS18B20::getTempMock() {
+
+    float r = static_cast <float> (rand()) / static_cast <float> (RAND_MAX);
+    return r;
+}
+
 float DS18B20::getTemp() {
 	FILE *devFile = fopen(path, "r");
 	if (devFile == NULL) {

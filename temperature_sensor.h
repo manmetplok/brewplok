@@ -36,7 +36,7 @@ public:
     SensorModel(QObject *parent = 0);
 
     void addSensor(const TemperatureSensor &sensor);
-
+    void setCurrentTemp(int index, float temp);
     int rowCount(const QModelIndex & parent = QModelIndex()) const;
 
     QVariant data(const QModelIndex & index, int role = Qt::DisplayRole) const;

@@ -41,6 +41,7 @@ public:
 	uint8_t getUnits();
 	void setUnits(uint8_t);
 	float getTemp();
+    float getTempMock();
 	float CtoF(float);
 private:
 	uint8_t unit_;

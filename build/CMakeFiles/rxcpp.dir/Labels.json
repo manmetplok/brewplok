@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/jorrit/Plok/brewplok/build/CMakeFiles/rxcpp"
+		},
+		{
+			"file" : "/home/jorrit/Plok/brewplok/build/CMakeFiles/rxcpp.rule"
+		},
+		{
+			"file" : "/home/jorrit/Plok/brewplok/build/CMakeFiles/rxcpp-complete.rule"
+		},
+		{
+			"file" : "/home/jorrit/Plok/brewplok/build/src/rxcpp-stamp/rxcpp-install.rule"
+		},
+		{
+			"file" : "/home/jorrit/Plok/brewplok/build/src/rxcpp-stamp/rxcpp-mkdir.rule"
+		},
+		{
+			"file" : "/home/jorrit/Plok/brewplok/build/src/rxcpp-stamp/rxcpp-download.rule"
+		},
+		{
+			"file" : "/home/jorrit/Plok/brewplok/build/src/rxcpp-stamp/rxcpp-update.rule"
+		},
+		{
+			"file" : "/home/jorrit/Plok/brewplok/build/src/rxcpp-stamp/rxcpp-patch.rule"
+		},
+		{
+			"file" : "/home/jorrit/Plok/brewplok/build/src/rxcpp-stamp/rxcpp-configure.rule"
+		},
+		{
+			"file" : "/home/jorrit/Plok/brewplok/build/src/rxcpp-stamp/rxcpp-build.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"rxcpp"
+		],
+		"name" : "rxcpp"
+	}
+}

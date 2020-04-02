@@ -1,0 +1,26 @@
+{
+	"BUILD_DIR" : "/home/jorrit/Plok/brewplok/build/brewplok_autogen",
+	"CMAKE_BINARY_DIR" : "/home/jorrit/Plok/brewplok/build",
+	"CMAKE_CURRENT_BINARY_DIR" : "/home/jorrit/Plok/brewplok/build",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/home/jorrit/Plok/brewplok",
+	"CMAKE_SOURCE_DIR" : "/home/jorrit/Plok/brewplok",
+	"INCLUDE_DIR" : "/home/jorrit/Plok/brewplok/build/brewplok_autogen/include",
+	"INPUTS" : 
+	[
+		"/home/jorrit/Plok/brewplok/TempPanel.ui.qml",
+		"/home/jorrit/Plok/brewplok/Page1Form.qml",
+		"/home/jorrit/Plok/brewplok/qtquickcontrols2.conf",
+		"/home/jorrit/Plok/brewplok/Page2Form.qml",
+		"/home/jorrit/Plok/brewplok/main.qml"
+	],
+	"LOCK_FILE" : "/home/jorrit/Plok/brewplok/build/CMakeFiles/brewplok_autogen.dir/AutoRcc_qml_EWIEGA46WW_Lock.lock",
+	"MULTI_CONFIG" : false,
+	"OPTIONS" : [ "-name", "qml" ],
+	"OUTPUT_CHECKSUM" : "EWIEGA46WW",
+	"OUTPUT_NAME" : "qrc_qml.cpp",
+	"RCC_EXECUTABLE" : "/usr/bin/rcc",
+	"RCC_LIST_OPTIONS" : [ "--list" ],
+	"SETTINGS_FILE" : "/home/jorrit/Plok/brewplok/build/CMakeFiles/brewplok_autogen.dir/AutoRcc_qml_EWIEGA46WW_Used.txt",
+	"SOURCE" : "/home/jorrit/Plok/brewplok/qml.qrc",
+	"VERBOSITY" : 0
+}

@@ -14,6 +14,7 @@ QString TemperatureSensor::address() const {
 }
 
 
+
 double TemperatureSensor::target_temp() const {
     return m_target_temp;
 }
@@ -29,6 +30,14 @@ void TemperatureSensor::current_temp(float temp) {
 SensorModel::SensorModel(QObject *parent)
     : QAbstractListModel(parent)
 {
+}
+
+
+void SensorModel::setCurrentTemp(int index, float temp)
+{
+    m_sensors[index].current_temp(temp);
+    QModelIndex topLeft = createIndex(index,0);
+    emit dataChanged(topLeft, topLeft);
 }
 
 void SensorModel::addSensor(const TemperatureSensor &sensor)

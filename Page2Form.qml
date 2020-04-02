@@ -56,10 +56,6 @@ Page {
 
         }
     }
-    Component.onCompleted: {
-        for (var i = 0; i <= 100; i++) {
-            series1.append(i, Math.random()* 100);
-        }
-    }
+
 }
 
