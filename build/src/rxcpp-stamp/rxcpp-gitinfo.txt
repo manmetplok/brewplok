@@ -1,3 +1,0 @@
-repository='https://github.com/Reactive-Extensions/RxCpp.git'
-module=''
-tag='origin'
