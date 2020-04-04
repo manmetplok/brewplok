@@ -17,7 +17,7 @@ Page {
                     id: column
                     spacing: 10
                     name: model.address
-                    current: model.current
+                    current: model.current.toFixed(1)
                 }
 
         }

@@ -5,6 +5,7 @@
 #include "temperature_sensor.h"
 #include "temperature_controller.h"
 
+#include "data.h"
 #include "DS18B20.h"
 
 int main(int argc, char *argv[])
@@ -18,12 +19,14 @@ int main(int argc, char *argv[])
     QApplication app(argc, argv);
 
     SensorModel model;
-    TemperatureSensor sensorMod("28-00000b385bb3");
+    TemperatureSensor sensorMod("28-00000b385bb2");
+    TemperatureSensor sensorMod2("28-00000b385bb3");
 
 
     model.addSensor(sensorMod);
-
-    TemperatureController controller(&model);
+    model.addSensor(sensorMod2);
+    Data data;
+    TemperatureController controller(&model, &data);
     controller.Start();
     QQmlApplicationEngine engine;
 
@@ -36,6 +39,7 @@ int main(int argc, char *argv[])
     }, Qt::QueuedConnection);
     QQmlContext *context = engine.rootContext();
     context->setContextProperty("sensorModel", &model);
+    context->setContextProperty("graphData", &data);
     engine.load(url);
 
     return app.exec();

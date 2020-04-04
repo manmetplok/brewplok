@@ -36,7 +36,7 @@ DS18B20::~DS18B20() {
 float DS18B20::getTempMock() {
 
     float r = static_cast <float> (rand()) / static_cast <float> (RAND_MAX);
-    return r;
+    return r * 100;
 }
 
 float DS18B20::getTemp() {
