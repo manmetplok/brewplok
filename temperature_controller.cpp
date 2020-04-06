@@ -3,6 +3,8 @@
 #include "DS18B20.h"
 #include "data.h"
 
+#include <iostream>
+#include <fstream>
 
 TemperatureController::TemperatureController(SensorModel* sensorModel, Data * data)
 {
@@ -40,16 +42,28 @@ void TemperatureController::Start() {
     },
                 [](){printf("OnCompleted\n");});
 
-        auto values = rxcpp::observable<>::interval(std::chrono::seconds(3));
+        auto values = rxcpp::observable<>::interval(std::chrono::seconds(5));
         values.subscribe_on(threads)
-                .flat_map([this](int _){
+                .flat_map([this](int time){
             return rxcpp::observable<>::iterate(this->sessions)
-                    .map([](auto s){
+                    .map([time](auto s){
                 auto [sensor_name, session] = s;
                         DS18B20 reader(sensor_name.c_str());
                         auto newValue = reader.getTempMock();
                         session.get()->add_value(newValue);
+
+                        //TODO move this..
+                        FILE * myfile;
+                        myfile = fopen ("values.txt","a");
+                        {
+                          std::fprintf(myfile, "%d,%s,%f\n",time, sensor_name.c_str(),newValue);
+
+                        }
+                        fclose (myfile);
+
+
                         return std::tuple<std::string, float, std::shared_ptr<Session>>(sensor_name, newValue,session );
+
             });
             })
                         .observe_on(current)
