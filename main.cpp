@@ -23,11 +23,14 @@ int main(int argc, char *argv[])
     TemperatureSensor sensorMod("28-011927ec8fc8");
     TemperatureSensor sensorMod2("28-011927da6692");
     TemperatureSensor sensorMod3("28-011927f400ba");
+    TemperatureSensor sensorMod4("28-011927fd0a8c");
+
 
 
     model.addSensor(sensorMod);
     model.addSensor(sensorMod2);
     model.addSensor(sensorMod3);
+    model.addSensor(sensorMod4);
     Data data;
     TemperatureController controller(&model, &data);
     controller.Start();

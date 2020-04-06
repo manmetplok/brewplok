@@ -42,7 +42,7 @@ void TemperatureController::Start() {
     },
                 [](){printf("OnCompleted\n");});
 
-        auto values = rxcpp::observable<>::interval(std::chrono::seconds(5));
+        auto values = rxcpp::observable<>::interval(std::chrono::seconds(10));
         values.subscribe_on(threads)
                 .flat_map([this](int time){
             return rxcpp::observable<>::iterate(this->sessions)
@@ -57,10 +57,8 @@ void TemperatureController::Start() {
                         myfile = fopen ("values.txt","a");
                         {
                           std::fprintf(myfile, "%d,%s,%f\n",time, sensor_name.c_str(),newValue);
-
                         }
                         fclose (myfile);
-
 
                         return std::tuple<std::string, float, std::shared_ptr<Session>>(sensor_name, newValue,session );
 

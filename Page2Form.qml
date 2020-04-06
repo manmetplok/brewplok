@@ -18,7 +18,7 @@ Page {
             ||chartView.createSeries(ChartView.SeriesTypeLine, sensorName ,axisX, yAxis );
             console.log(sensorName, sensorValue.x, sensorValue.y);
 
-            if(serie.count > 80)
+            if(serie.count > 400)
                 serie.remove(0);
             serie.append(sensorValue.x, sensorValue.y)
             axisX.min = serie.at(0).x
