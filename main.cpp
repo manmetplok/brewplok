@@ -19,12 +19,15 @@ int main(int argc, char *argv[])
     QApplication app(argc, argv);
 
     SensorModel model;
-    TemperatureSensor sensorMod("28-00000b385bb2");
-    TemperatureSensor sensorMod2("28-00000b385bb3");
+
+    TemperatureSensor sensorMod("28-011927ec8fc8");
+    TemperatureSensor sensorMod2("28-011927da6692");
+    TemperatureSensor sensorMod3("28-011927f400ba");
 
 
     model.addSensor(sensorMod);
     model.addSensor(sensorMod2);
+    model.addSensor(sensorMod3);
     Data data;
     TemperatureController controller(&model, &data);
     controller.Start();
